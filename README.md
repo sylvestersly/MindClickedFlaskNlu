@@ -1,0 +1,2 @@
+# MindClickedFlaskNlu
+Dialogue systems are forever learning applications therefore by building  simplistic and primitive application there is room to expand and add more intents as well as more entities to produce accurate results. This web application using natural language processing in a dialogue system for mental health assessments to improve early intervention.
