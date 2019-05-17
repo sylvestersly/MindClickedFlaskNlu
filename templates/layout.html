@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--    Custome CSS for Front-->
+    <link type="text/css" href="{{ url_for('static', filename='css/cover.css') }}" rel="stylesheet">
+
+    {% block header %}{% endblock %}
+</head>
+
+<body>
+<!-- The below layout is using a div classes reference in the .css file   -->
+<!--the wrapper an element that wraps everything else on the page -->
+<!--the cover container has set the content's margins to auto (Enabline page cover) Essentially dealing with the responsive behaviors of your layout.-->
+<!--the masthead is basicaly a graphic image that is often found at the top of a page.-->
+<!--Nav-line = Links to the site -->
+<div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand" href="{{ url_for('home')}}">MindClicked</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link" href="{{ url_for('index')}}">Assessment</a>
+                <a class="nav-link" href="{{ url_for('about')}}">About</a>
+                <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+              </nav>
+            </div>
+          </div>
+
+<main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">
+            {%with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                    <div class="alert alert-{{category }}">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+            {% endif %}
+            {% endwith %}
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+</main>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Copyright &copy; 2019 <a href="https://www.skemtech.com">Sylvester Mbeah</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

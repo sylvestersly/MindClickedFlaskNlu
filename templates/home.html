@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block header %}
+<link type="text/css" href="{{ url_for('static', filename='css/cover.css')}}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+        <div class="cover-container">
+<div class="inner cover">
+            <h1 class="cover-heading">Using Natural Language Processing in a Dialogue System for Mental Health Assessments!</h1>
+            <p class="lead">This project "MindClicked" is a web application using natural language processing in a dialogue system for mental health assessments to improve early intervention.</p>
+            <p class="lead">
+              <a class="btn btn-lg btn-secondary" href="{{ url_for('index')}}">Start Assessment</a>
+            </p>
+          </div>
+        </div>
+{% endblock %}
+

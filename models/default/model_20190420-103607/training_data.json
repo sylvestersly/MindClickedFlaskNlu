@@ -1,0 +1,134 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "pattern": "[0-9]{5}",
+        "name": "Age"
+      },
+      {
+        "pattern": "hey[^\\s]*",
+        "name": "greet"
+      }
+    ],
+    "common_examples": [
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "entities": [],
+        "intent": "greet",
+        "text": "dear sir"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "yep"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "yeah"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "indeed"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "that's right"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "ok"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "great"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "right, thank you"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "correct"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "great choice"
+      },
+      {
+        "entities": [],
+        "intent": "affirm",
+        "text": "sounds really good"
+      },
+      {
+        "entities": [
+          {
+            "end": 34,
+            "value": "Depression",
+            "start": 29,
+            "entity": "mhproblem"
+          }
+        ],
+        "intent": "start_assessment",
+        "text": " I am stressed send help"
+      },
+      {
+        "entities": [
+          {
+            "end": 35,
+            "value": "ptsd",
+            "start": 29,
+            "entity": "mhproblem"
+          }
+        ],
+        "intent": "start_assessment",
+        "text": "how do i know i have ptsd"
+      },
+      {
+    }
