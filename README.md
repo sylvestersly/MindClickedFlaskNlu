@@ -1,5 +1,5 @@
 # MindClickedFlaskNlu
-Dialogue systems are forever learning applications therefore by building  simplistic and primitive application there is room to expand and add more intents as well as more entities to produce accurate results. This web application using natural language processing in a dialogue system for mental health assessments to improve early intervention.
+Dialogue systems are forever learning applications therefore by building  simplistic and primitive application there is room to expand and add more intents as well as more entities to produce accurate results. This web application is using natural language processing in a dialogue system for mental health assessments to improve early intervention.
 
 ## Getting Started- 
 #### http://www.mindclicked.com/ Full app deployed on heroku but serving through a custome bought domian. Use 'admin@mindclicked.com' for the username and '123456789' for password.
